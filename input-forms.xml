@@ -284,7 +284,7 @@
                     <repeatable>true</repeatable>
                     <label>Department</label>
                     <input-type value-pairs-name="departments">dropdown</input-type>
-                    <hint>Select the name of the department. If </hint>
+                    <hint>Select the name of the department. If the department is not available, please select "Other."</hint>
                     <required/>
                 </field>
                 <field>
@@ -295,7 +295,7 @@
                     <label>Publisher</label>
                     <input-type>onebox</input-type>
                     <hint>For dissertations and theses, the publisher is always Northern Illinois University.</hint>
-                    <required/>
+                    <required>Publisher is required.</required>
                 </field>
                 <field>
                     <dc-schema>dc</dc-schema>
@@ -329,7 +329,7 @@
                     <input-type value-pairs-name="dc_types">dropdown</input-type>
                     <hint>Select the type(s) of content of the item. To select more than one value
                         in the list, you may have to hold down the "CTRL" or "Shift" key.</hint>
-                    <required/>
+                    <required>One type is required.</required>
                 </field>
                 <field>
                     <dc-schema>dc</dc-schema>
