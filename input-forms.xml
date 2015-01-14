@@ -275,7 +275,7 @@
                     <label>Advisor</label>
                     <input-type>onebox</input-type>
                     <hint>Enter the name of the faculty advisor. If known, include the middle initial and year of birth.</hint>
-                    <required/>
+                    <required>The name of at least one faculty advisor is required.</required>
                 </field>
                 <field>
                     <dc-schema>dc</dc-schema>
@@ -284,7 +284,7 @@
                     <repeatable>true</repeatable>
                     <label>Department</label>
                     <input-type value-pairs-name="departments">dropdown</input-type>
-                    <hint>Select the name of the department.</hint>
+                    <hint>Select the name of the department. If </hint>
                     <required/>
                 </field>
                 <field>
@@ -306,18 +306,7 @@
                     <input-type>date</input-type>
                     <hint>Please give the submission date. You must enter at least the year.</hint>
                     <required>You must enter at least the year.</required>
-                </field>
-                <field>
-                    <dc-schema>dc</dc-schema>
-                    <dc-element>identifier</dc-element>
-                    <dc-qualifier/>
-                    <repeatable>false</repeatable>
-                    <label>Document number</label>
-                    <input-type>onebox</input-type>
-                    <hint>Enter the document number.</hint>
-                    <required/>
-                </field>
-                
+                </field>                
                 <field>
                     <dc-schema>dc</dc-schema>
                     <dc-element>identifier</dc-element>
@@ -423,7 +412,7 @@
                     <dc-element>format</dc-element>
                     <dc-qualifier>extent</dc-qualifier>
                     <repeatable>false</repeatable>
-                    <label>Pages</label>
+                    <label>Extent</label>
                     <input-type>onebox</input-type>
                     <hint>Enter the number of pages, e.g. "23 pages"</hint>
                     <required/>
@@ -784,7 +773,11 @@
             <pair>
                 <displayed-value>School of Theatre and Dance</displayed-value>
                 <stored-value>School of Theatre and Dance</stored-value>
-            </pair>            
+            </pair>
+            <pair>
+                <displayed-value>Other</displayed-value>
+                <stored-value>Other</stored-value>
+            </pair>              
         </value-pairs>
         
         <value-pairs value-pairs-name="dc_types" dc-term="type">
