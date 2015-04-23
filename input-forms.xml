@@ -44,10 +44,10 @@
                     <dc-element>contributor</dc-element>
                     <dc-qualifier>author</dc-qualifier>
                     <repeatable>true</repeatable>
-                    <label>Authors</label>
-                    <input-type>name</input-type>
-                    <hint>Enter the names of the authors of this item below.</hint>
-                    <required/>
+                    <label>Author(s)</label>
+                    <input-type>onebox</input-type>
+                    <hint>Please include the full name of the author, including middle initial and year of birth, in the following format: Last, First M.I., YYYY--. For example: "Doe, John Q., 1985--". Year of birth is not required, but preferred.</hint>
+                    <required>You must enter at least one author for this item.</required>
                 </field>
 
                 <field>
@@ -74,18 +74,6 @@
 
                 <field>
                     <dc-schema>dc</dc-schema>
-                    <dc-element>date</dc-element>
-                    <dc-qualifier>issued</dc-qualifier>
-                    <repeatable>false</repeatable>
-                    <label>Date of Issue</label>
-                    <input-type>date</input-type>
-                    <hint>Please give the date of previous publication or public distribution below.
-                        You can leave out the day and/or month if they aren't applicable.</hint>
-                    <required>You must enter at least the year.</required>
-                </field>
-
-                <field>
-                    <dc-schema>dc</dc-schema>
                     <dc-element>publisher</dc-element>
                     <dc-qualifier/>
                     <repeatable>false</repeatable>
@@ -95,16 +83,17 @@
                         item.</hint>
                     <required/>
                 </field>
-
+                
                 <field>
                     <dc-schema>dc</dc-schema>
-                    <dc-element>altlocation</dc-element>
-                    <dc-qualifier>uri</dc-qualifier>
+                    <dc-element>date</dc-element>
+                    <dc-qualifier>issued</dc-qualifier>
                     <repeatable>false</repeatable>
-                    <label>Alternate Location</label>
-                    <input-type>onebox</input-type>
-                    <hint>Enter the alternate location where the resource can be found.</hint>
-                    <required/>
+                    <label>Date of Issue</label>
+                    <input-type>date</input-type>
+                    <hint>Please give the date of previous publication or public distribution below.
+                        You can leave out the day and/or month if they aren't applicable.</hint>
+                    <required>You must enter at least the year.</required>
                 </field>
 
                 <field>
@@ -122,7 +111,7 @@
                 <field>
                     <dc-schema>dc</dc-schema>
                     <dc-element>relation</dc-element>
-                    <dc-qualifier>ispartofseries</dc-qualifier>
+                    <dc-qualifier>ispartof</dc-qualifier>
                     <repeatable>true</repeatable>
                     <label>Series/Report No.</label>
                     <input-type>series</input-type>
