@@ -14,7 +14,8 @@
     <!-- the mapping for handle "default".                                    -->
 
     <form-map>
-        <name-map collection-handle="default" form-name="traditional"/>
+        <name-map collection-handle="default" form-name="traditional"/>\
+        <name-map collection-handle="10843/13613" form-name="honors_capstones"/>
         <name-map collection-handle="10843/13631" form-name="honors_capstones"/>
     </form-map>
 
