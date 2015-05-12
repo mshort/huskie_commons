@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <?xml version="1.0"?>
 
 <!DOCTYPE input-forms SYSTEM "input-forms.dtd">
@@ -156,7 +157,7 @@
                     <dc-qualifier>genre</dc-qualifier>
                     <repeatable>true</repeatable>
                     <label>Genre</label>
-                    <input-type value-pairs-name="scholar_genres">dropdown</input-type>
+                    <input-type value-pairs-name="common_genres">dropdown</input-type>
                     <hint>Select the genre(s) that cateogrize the item. To select more than one value
                         in the list, you may have to hold down the "CTRL" or "Shift" key.</hint>
                     <required>You must enter at least one genre.</required>
@@ -901,7 +902,7 @@
             </pair>
         </value-pairs>
         
-        <value-pairs value-pairs-name="scholar_genres" dc-term="type_genre">
+        <value-pairs value-pairs-name="common_genres" dc-term="type_genre">
             <pair>
                 <displayed-value>Article</displayed-value>
                 <stored-value>Article</stored-value>
@@ -1005,6 +1006,45 @@
             <pair>
                 <displayed-value>Website</displayed-value>
                 <stored-value>Website</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Working/Discussion Paper</displayed-value>
+                <stored-value>Working/Discussion Paper</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Other</displayed-value>
+                <stored-value>Other</stored-value>
+            </pair>
+        </value-pairs>
+        
+        <value-pairs value-pairs-name="scholar_genres" dc-term="type_genre">
+            <pair>
+                <displayed-value>Article</displayed-value>
+                <stored-value>Article</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Book</displayed-value>
+                <stored-value>Book</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Book Chapter</displayed-value>
+                <stored-value>Book Chapter</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Conference Paper/Presentation</displayed-value>
+                <stored-value>Conference Paper/Presentation</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Conference Poster</displayed-value>
+                <stored-value>Conference Poster</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Conference Proceeding (whole)</displayed-value>
+                <stored-value>Conference Proceeding (whole)</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Journal (whole)</displayed-value>
+                <stored-value>Journal (whole)</stored-value>
             </pair>
             <pair>
                 <displayed-value>Working/Discussion Paper</displayed-value>
