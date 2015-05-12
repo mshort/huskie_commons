@@ -712,32 +712,25 @@
                 <stored-value>Department of Marketing</stored-value>
             </pair>
             <pair>
-                <displayed-value>Department of Operations and Information
-                    Management</displayed-value>
+                <displayed-value>Department of Operations and Information Management</displayed-value>
                 <stored-value>Department of Operations and Information Management</stored-value>
             </pair>
             <pair>
-                <displayed-value>Department of Counseling, Adult, and Higher Education
-                    (CAHE)</displayed-value>
-                <stored-value>Department of Counseling, Adult, and Higher Education
-                    (CAHE)</stored-value>
+                <displayed-value>Department of Counseling, Adult, and Higher Education (CAHE)</displayed-value>
+                <stored-value>Department of Counseling, Adult, and Higher Education (CAHE)</stored-value>
             </pair>
             <pair>
-                <displayed-value>Department of Educational Technology, Research, and
-                    Assessment</displayed-value>
+                <displayed-value>Department of Educational Technology, Research, and Assessment</displayed-value>
                 <stored-value>Department of Educational Technology, Research, and
                     Assessment</stored-value>
             </pair>
             <pair>
-                <displayed-value>Department of Kinesiology and Physical Education
-                    (KNPE)</displayed-value>
+                <displayed-value>Department of Kinesiology and Physical Education (KNPE)</displayed-value>
                 <stored-value>Department of Kinesiology and Physical Education (KNPE)</stored-value>
             </pair>
             <pair>
-                <displayed-value>Department of Leadership, Educational Psychology, and Foundations
-                    (LEPF)</displayed-value>
-                <stored-value>Department of Leadership, Educational Psychology, and Foundations
-                    (LEPF)</stored-value>
+                <displayed-value>Department of Leadership, Educational Psychology, and Foundations (LEPF)</displayed-value>
+                <stored-value>Department of Leadership, Educational Psychology, and Foundations (LEPF)</stored-value>
             </pair>
             <pair>
                 <displayed-value>Department of Literacy Education (LTCY)</displayed-value>
@@ -768,8 +761,7 @@
                 <stored-value>Department of Military Science</stored-value>
             </pair>
             <pair>
-                <displayed-value>School of Allied Health and Communicative
-                    Disorders</displayed-value>
+                <displayed-value>School of Allied Health and Communicative Disorders</displayed-value>
                 <stored-value>School of Allied Health and Communicative Disorders</stored-value>
             </pair>
             <pair>
@@ -909,7 +901,7 @@
             </pair>
         </value-pairs>
         
-        <value-pairs value-pairs-name="scholar_genres" dc-term="type">
+        <value-pairs value-pairs-name="scholar_genres" dc-term="type_genre">
             <pair>
                 <displayed-value>Article</displayed-value>
                 <stored-value>Article</stored-value>
