@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<!DOCTYPE input-forms SYSTEM "input-forms.dtd">
 
+<!DOCTYPE input-forms SYSTEM "input-forms.dtd">
 
 <input-forms>
 
@@ -14,9 +14,10 @@
     <!-- the mapping for handle "default".                                    -->
 
     <form-map>
-        <name-map collection-handle="default" form-name="traditional"/>\
-        <name-map collection-handle="10843/13613" form-name="honors_capstones"/>
+        <name-map collection-handle="default" form-name="traditional"/>
+        <name-map collection-handle="10843/8" form-name="scholar_collection"/>
         <name-map collection-handle="10843/13631" form-name="honors_capstones"/>
+        <name-map collection-handle="10843/13613" form-name="honors_capstones"/>        
     </form-map>
 
 
@@ -47,7 +48,10 @@
                     <repeatable>true</repeatable>
                     <label>Author(s)</label>
                     <input-type>onebox</input-type>
-                    <hint>Please include the full name of the author, including middle initial and year of birth, in the following format: Last, First M.I., YYYY--. For example: "Doe, John Q., 1985--". Year of birth is not required, but preferred.</hint>
+                    <hint>Please include the full name of the author, including middle initial and
+                        year of birth, in the following format: Last, First M.I., YYYY--. For
+                        example: "Doe, John Q., 1985--". Year of birth is not required, but
+                        preferred.</hint>
                     <required>You must enter at least one author for this item.</required>
                 </field>
 
@@ -84,7 +88,7 @@
                         item.</hint>
                     <required/>
                 </field>
-                
+
                 <field>
                     <dc-schema>dc</dc-schema>
                     <dc-element>date</dc-element>
@@ -140,10 +144,22 @@
                     <dc-qualifier/>
                     <repeatable>true</repeatable>
                     <label>Type</label>
-                    <input-type value-pairs-name="common_types">dropdown</input-type>
+                    <input-type value-pairs-name="dc_types">dropdown</input-type>
                     <hint> Select the type(s) of content of the item. To select more than one value
                         in the list, you may have to hold down the "CTRL" or "Shift" key.</hint>
                     <required/>
+                </field>
+                
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>type</dc-element>
+                    <dc-qualifier>genre</dc-qualifier>
+                    <repeatable>true</repeatable>
+                    <label>Genre</label>
+                    <input-type value-pairs-name="scholar_genres">dropdown</input-type>
+                    <hint>Select the genre(s) that cateogrize the item. To select more than one value
+                        in the list, you may have to hold down the "CTRL" or "Shift" key.</hint>
+                    <required>You must enter at least one genre.</required>
                 </field>
 
                 <field>
@@ -210,22 +226,7 @@
             </page>
         </form>
 
-        <form name="one">
-            <page number="1">
-                <field>
-                    <dc-schema>dc</dc-schema>
-                    <dc-element>contributor</dc-element>
-                    <dc-qualifier>author</dc-qualifier>
-                    <repeatable>true</repeatable>
-                    <label>One: Authors</label>
-                    <input-type>name</input-type>
-                    <hint>Enter the names of the authors of this item below.</hint>
-                    <required/>
-                </field>
-            </page>
-        </form>
-
-	<form name="scholar_collection">
+        <form name="scholar_collection">
             <page number="1">
                 <field>
                     <dc-schema>dc</dc-schema>
@@ -234,7 +235,10 @@
                     <repeatable>true</repeatable>
                     <label>Author(s)</label>
                     <input-type>onebox</input-type>
-                    <hint>Please include the full name of the author, including middle initial and year of birth, in the following format: Last, First M.I., YYYY--. For example: "Doe, John Q., 1985--". Year of birth is not required, but preferred.</hint>
+                    <hint>Please include the full name of the author, including middle initial and
+                        year of birth, in the following format: Last, First M.I., YYYY--. For
+                        example: "Doe, John Q., 1985--". Year of birth is not required, but
+                        preferred.</hint>
                     <required>You must enter at least one author for this item.</required>
                 </field>
 
@@ -271,7 +275,7 @@
                         item.</hint>
                     <required/>
                 </field>
-                
+
                 <field>
                     <dc-schema>dc</dc-schema>
                     <dc-element>date</dc-element>
@@ -320,17 +324,27 @@
                         please enter the types and the actual numbers or codes below.</hint>
                     <required/>
                 </field>
-
                 <field>
                     <dc-schema>dc</dc-schema>
                     <dc-element>type</dc-element>
                     <dc-qualifier/>
                     <repeatable>true</repeatable>
                     <label>Type</label>
-                    <input-type value-pairs-name="scholar_types">dropdown</input-type>
-                    <hint> Select the type(s) of content of the item. To select more than one value
+                    <input-type value-pairs-name="dc_types">dropdown</input-type>
+                    <hint>Select the type(s) of content of the item. To select more than one value
                         in the list, you may have to hold down the "CTRL" or "Shift" key.</hint>
-                    <required/>
+                    <required>One type is required.</required>
+                </field>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>type</dc-element>
+                    <dc-qualifier>genre</dc-qualifier>
+                    <repeatable>true</repeatable>
+                    <label>Genre</label>
+                    <input-type value-pairs-name="scholar_genres">dropdown</input-type>
+                    <hint>Select the genre(s) that cateogrize the item. To select more than one value
+                        in the list, you may have to hold down the "CTRL" or "Shift" key.</hint>
+                    <required>You must enter at least one genre.</required>
                 </field>
 
                 <field>
@@ -397,21 +411,6 @@
             </page>
         </form>
 
-        <form name="one">
-            <page number="1">
-                <field>
-                    <dc-schema>dc</dc-schema>
-                    <dc-element>contributor</dc-element>
-                    <dc-qualifier>author</dc-qualifier>
-                    <repeatable>true</repeatable>
-                    <label>One: Authors</label>
-                    <input-type>name</input-type>
-                    <hint>Enter the names of the authors of this item below.</hint>
-                    <required/>
-                </field>
-            </page>
-        </form>
-        
         <form name="honors_capstones">
             <page number="1">
                 <field>
@@ -421,7 +420,10 @@
                     <repeatable>true</repeatable>
                     <label>Author(s)</label>
                     <input-type>onebox</input-type>
-                    <hint>Please include the full name of the author, including middle initial and year of birth, in the following format: Last, First M.I., YYYY--. For example: "Doe, John Q., 1985--". Year of birth is not required, but preferred.</hint>
+                    <hint>Please include the full name of the author, including middle initial and
+                        year of birth, in the following format: Last, First M.I., YYYY--. For
+                        example: "Doe, John Q., 1985--". Year of birth is not required, but
+                        preferred.</hint>
                     <required>You must enter at least one author for this item.</required>
                 </field>
                 <field>
@@ -451,7 +453,8 @@
                     <repeatable>true</repeatable>
                     <label>Advisor</label>
                     <input-type>onebox</input-type>
-                    <hint>Enter the name of the faculty advisor. If known, include the middle initial and year of birth.</hint>
+                    <hint>Enter the name of the faculty advisor. If known, include the middle
+                        initial and year of birth.</hint>
                     <required>The name of at least one faculty advisor is required.</required>
                 </field>
                 <field>
@@ -461,7 +464,8 @@
                     <repeatable>true</repeatable>
                     <label>Department</label>
                     <input-type value-pairs-name="departments">dropdown</input-type>
-                    <hint>Select the name of the department. If the department is not available, please select "Other."</hint>
+                    <hint>Select the name of the department. If the department is not available,
+                        please select "Other."</hint>
                     <required/>
                 </field>
                 <field>
@@ -471,7 +475,8 @@
                     <repeatable>false</repeatable>
                     <label>Publisher</label>
                     <input-type>onebox</input-type>
-                    <hint>For dissertations and theses, the publisher is always Northern Illinois University.</hint>
+                    <hint>For dissertations and theses, the publisher is always Northern Illinois
+                        University.</hint>
                     <required>Publisher is required.</required>
                 </field>
                 <field>
@@ -483,7 +488,7 @@
                     <input-type>date</input-type>
                     <hint>Please give the submission date. You must enter at least the year.</hint>
                     <required>You must enter at least the year.</required>
-                </field>                
+                </field>
                 <field>
                     <dc-schema>dc</dc-schema>
                     <dc-element>identifier</dc-element>
@@ -496,7 +501,7 @@
                     <required/>
                     <visibility>workflow</visibility>
                 </field>
-                
+
                 <field>
                     <dc-schema>dc</dc-schema>
                     <dc-element>type</dc-element>
@@ -512,10 +517,11 @@
                     <dc-schema>dc</dc-schema>
                     <dc-element>type</dc-element>
                     <dc-qualifier>genre</dc-qualifier>
-                    <repeatable>no</repeatable>
+                    <repeatable>true</repeatable>
                     <label>Genre</label>
-                    <input-type>onebox</input-type>
-                    <hint>Dissertations and theses share the same genre. Please do not change this field.</hint>
+                    <input-type value-pairs-name="honor_genres">dropdown</input-type>
+                    <hint>Select the genre(s) that cateogrize the item. To select more than one value
+                        in the list, you may have to hold down the "CTRL" or "Shift" key.</hint>
                     <required>You must enter at least one genre.</required>
                 </field>
                 <field>
@@ -546,11 +552,12 @@
                     <repeatable>false</repeatable>
                     <label>Rights</label>
                     <input-type>textarea</input-type>
-                    <hint>This is the standard rights statement attached to every dissertation and thesis.</hint>
+                    <hint>This is the standard rights statement attached to every dissertation and
+                        thesis.</hint>
                     <required>Please enter a rights statement.</required>
                 </field>
             </page>
-            
+
             <page number="2">
                 <field>
                     <dc-schema>dc</dc-schema>
@@ -563,7 +570,7 @@
                     <hint>Enter appropriate subject keywords or phrases.</hint>
                     <required>At least one keyword is required.</required>
                 </field>
-                
+
                 <field>
                     <dc-schema>dc</dc-schema>
                     <dc-element>description</dc-element>
@@ -596,7 +603,7 @@
                 </field>
             </page>
         </form>
-        
+
     </form-definitions>
 
 
@@ -638,164 +645,6 @@
             <pair>
                 <displayed-value>ISBN</displayed-value>
                 <stored-value>isbn</stored-value>
-            </pair>
-        </value-pairs>
-
-        <value-pairs value-pairs-name="scholar_types" dc-term="type">
-            <pair>
-                <displayed-value>Article</displayed-value>
-                <stored-value>Article</stored-value>
-            </pair>
-            <pair>
-                <displayed-value>Bibliography</displayed-value>
-                <stored-value>Bibliography</stored-value>
-            </pair>
-            <pair>
-                <displayed-value>Book</displayed-value>
-                <stored-value>Book</stored-value>
-            </pair>
-            <pair>
-                <displayed-value>Book Chapter</displayed-value>
-                <stored-value>Book Chapter</stored-value>
-            </pair>
-            <pair>
-                <displayed-value>Conference Poster</displayed-value>
-                <stored-value>Conference Poster</stored-value>
-            </pair>
-            <pair>
-                <displayed-value>Conference Proceeding (whole)</displayed-value>
-                <stored-value>Conference Proceeding (whole)</stored-value>
-            </pair>
-            <pair>
-                <displayed-value>Conference Paper</displayed-value>
-                <stored-value>Conference Paper</stored-value>
-            </pair>
-            <pair>
-                <displayed-value>Journal (whole)</displayed-value>
-                <stored-value>Journal (whole)</stored-value>
-            </pair>
-        </value-pairs>
-
-        <value-pairs value-pairs-name="common_types" dc-term="type">
-            <pair>
-                <displayed-value>Article</displayed-value>
-                <stored-value>Article</stored-value>
-            </pair>
-            <pair>
-                <displayed-value>Bibliography</displayed-value>
-                <stored-value>Bibliography</stored-value>
-            </pair>
-            <pair>
-                <displayed-value>Book</displayed-value>
-                <stored-value>Book</stored-value>
-            </pair>
-            <pair>
-                <displayed-value>Book Chapter</displayed-value>
-                <stored-value>Book chapter</stored-value>
-            </pair>
-            <pair>
-                <displayed-value>Book Review</displayed-value>
-                <stored-value>Book Review</stored-value>
-            </pair>
-            <pair>
-                <displayed-value>Editorial</displayed-value>
-                <stored-value>Editorial</stored-value>
-            </pair>
-            <pair>
-                <displayed-value>Essay</displayed-value>
-                <stored-value>Essay</stored-value>
-            </pair>
-            <pair>
-                <displayed-value>Conference Paper / Presentation</displayed-value>
-                <stored-value>Conference Paper / Presentation</stored-value>
-            </pair>
-            <pair>
-                <displayed-value>Conference Poster</displayed-value>
-                <stored-value>Conference Poster</stored-value>
-            </pair>
-            <pair>
-                <displayed-value>Conference Proceeding (whole)</displayed-value>
-                <stored-value>Conference Proceeding (whole)</stored-value>
-            </pair>
-            <pair>
-                <displayed-value>Data</displayed-value>
-                <stored-value>Data</stored-value>
-            </pair>
-            <pair>
-                <displayed-value>Dissertation / Thesis</displayed-value>
-                <stored-value>Dissertation / Thesis</stored-value>
-            </pair>
-            <pair>
-                <displayed-value>Drawing</displayed-value>
-                <stored-value>Drawing</stored-value>
-            </pair>
-            <pair>
-                <displayed-value>Fiction</displayed-value>
-                <stored-value>Fiction</stored-value>
-            </pair>
-            <pair>
-                <displayed-value>Journal (whole)</displayed-value>
-                <stored-value>Journal (whole)</stored-value>
-            </pair>
-            <pair>
-                <displayed-value>Map</displayed-value>
-                <stored-value>Map</stored-value>
-            </pair>
-            <pair>
-                <displayed-value>Newsletter</displayed-value>
-                <stored-value>Newsletter</stored-value>
-            </pair>
-            <pair>
-                <displayed-value>Performance</displayed-value>
-                <stored-value>Performance</stored-value>
-            </pair>
-            <pair>
-                <displayed-value>Photograph</displayed-value>
-                <stored-value>Photograph</stored-value>
-            </pair>
-            <pair>
-                <displayed-value>Poetry</displayed-value>
-                <stored-value>Poetry</stored-value>
-            </pair>
-            <pair>
-                <displayed-value>Presentation / Lecture / Speech</displayed-value>
-                <stored-value>Working Paper</stored-value>
-            </pair>
-            <pair>
-                <displayed-value>Proposal</displayed-value>
-                <stored-value>Proposal</stored-value>
-            </pair>
-            <pair>
-                <displayed-value>Oral History</displayed-value>
-                <stored-value>Oral History</stored-value>
-            </pair>
-            <pair>
-                <displayed-value>Report (Grant or Annual)</displayed-value>
-                <stored-value>Report (Grant or Annual)</stored-value>
-            </pair>
-            <pair>
-                <displayed-value>Score</displayed-value>
-                <stored-value>Score</stored-value>
-            </pair>
-            <pair>
-                <displayed-value>Technical Report</displayed-value>
-                <stored-value>Technical Report</stored-value>
-            </pair>
-            <pair>
-                <displayed-value>Video</displayed-value>
-                <stored-value>Video</stored-value>
-            </pair>
-            <pair>
-                <displayed-value>Website</displayed-value>
-                <stored-value>Website</stored-value>
-            </pair>
-            <pair>
-                <displayed-value>Working / Discussion Paper</displayed-value>
-                <stored-value>Technical Report</stored-value>
-            </pair>
-            <pair>
-                <displayed-value>Other</displayed-value>
-                <stored-value>Other</stored-value>
             </pair>
         </value-pairs>
 
@@ -844,7 +693,7 @@
                 <stored-value>other</stored-value>
             </pair>
         </value-pairs>
-        
+
         <value-pairs value-pairs-name="departments" dc-term="contributor">
             <pair>
                 <displayed-value>Department of Accountancy</displayed-value>
@@ -863,24 +712,32 @@
                 <stored-value>Department of Marketing</stored-value>
             </pair>
             <pair>
-                <displayed-value>Department of Operations and Information Management</displayed-value>
+                <displayed-value>Department of Operations and Information
+                    Management</displayed-value>
                 <stored-value>Department of Operations and Information Management</stored-value>
             </pair>
             <pair>
-                <displayed-value>Department of Counseling, Adult, and Higher Education (CAHE)</displayed-value>
-                <stored-value>Department of Counseling, Adult, and Higher Education (CAHE)</stored-value>
+                <displayed-value>Department of Counseling, Adult, and Higher Education
+                    (CAHE)</displayed-value>
+                <stored-value>Department of Counseling, Adult, and Higher Education
+                    (CAHE)</stored-value>
             </pair>
             <pair>
-                <displayed-value>Department of Educational Technology, Research, and Assessment</displayed-value>
-                <stored-value>Department of Educational Technology, Research, and Assessment</stored-value>
+                <displayed-value>Department of Educational Technology, Research, and
+                    Assessment</displayed-value>
+                <stored-value>Department of Educational Technology, Research, and
+                    Assessment</stored-value>
             </pair>
             <pair>
-                <displayed-value>Department of Kinesiology and Physical Education (KNPE)</displayed-value>
+                <displayed-value>Department of Kinesiology and Physical Education
+                    (KNPE)</displayed-value>
                 <stored-value>Department of Kinesiology and Physical Education (KNPE)</stored-value>
             </pair>
             <pair>
-                <displayed-value>Department of Leadership, Educational Psychology, and Foundations (LEPF)</displayed-value>
-                <stored-value>Department of Leadership, Educational Psychology, and Foundations (LEPF)</stored-value>
+                <displayed-value>Department of Leadership, Educational Psychology, and Foundations
+                    (LEPF)</displayed-value>
+                <stored-value>Department of Leadership, Educational Psychology, and Foundations
+                    (LEPF)</stored-value>
             </pair>
             <pair>
                 <displayed-value>Department of Literacy Education (LTCY)</displayed-value>
@@ -911,7 +768,8 @@
                 <stored-value>Department of Military Science</stored-value>
             </pair>
             <pair>
-                <displayed-value>School of Allied Health and Communicative Disorders</displayed-value>
+                <displayed-value>School of Allied Health and Communicative
+                    Disorders</displayed-value>
                 <stored-value>School of Allied Health and Communicative Disorders</stored-value>
             </pair>
             <pair>
@@ -1021,9 +879,9 @@
             <pair>
                 <displayed-value>Other</displayed-value>
                 <stored-value>Other</stored-value>
-            </pair>              
+            </pair>
         </value-pairs>
-        
+
         <value-pairs value-pairs-name="dc_types" dc-term="type">
             <pair>
                 <displayed-value>Audio</displayed-value>
@@ -1051,7 +909,7 @@
             </pair>
         </value-pairs>
         
-        <value-pairs value-pairs-name="common_genres" dc-term="type_genre">
+        <value-pairs value-pairs-name="scholar_genres" dc-term="type">
             <pair>
                 <displayed-value>Article</displayed-value>
                 <stored-value>Article</stored-value>
@@ -1097,8 +955,8 @@
                 <stored-value>Data</stored-value>
             </pair>
             <pair>
-                <displayed-value>Dissertation</displayed-value>
-                <stored-value>Dissertation</stored-value>
+                <displayed-value>Dissertation/Thesis</displayed-value>
+                <stored-value>Dissertation/Thesis</stored-value>
             </pair>
             <pair>
                 <displayed-value>Drawing</displayed-value>
@@ -1153,10 +1011,6 @@
                 <stored-value>Technical Report</stored-value>
             </pair>
             <pair>
-                <displayed-value>Thesis</displayed-value>
-                <stored-value>Thesis</stored-value>
-            </pair>
-            <pair>
                 <displayed-value>Website</displayed-value>
                 <stored-value>Website</stored-value>
             </pair>
@@ -1170,6 +1024,58 @@
             </pair>
         </value-pairs>
         
+
+        <value-pairs value-pairs-name="honor_genres" dc-term="type_genre">
+            <pair>
+                <displayed-value>Article</displayed-value>
+                <stored-value>Article</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Essay</displayed-value>
+                <stored-value>Essay</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Conference Poster</displayed-value>
+                <stored-value>Conference Poster</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Drawing</displayed-value>
+                <stored-value>Drawing</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Performance</displayed-value>
+                <stored-value>Performance</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Photograph</displayed-value>
+                <stored-value>Photograph</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Poetry</displayed-value>
+                <stored-value>Poetry</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Presentation/Lecture/Speech</displayed-value>
+                <stored-value>Presentation/Lecture/Speech</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Oral history</displayed-value>
+                <stored-value>Oral history</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Score</displayed-value>
+                <stored-value>Score</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Website</displayed-value>
+                <stored-value>Website</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Other</displayed-value>
+                <stored-value>Other</stored-value>
+            </pair>
+        </value-pairs>
+
         <value-pairs value-pairs-name="degree_types" dc-term="description_degree">
             <pair>
                 <displayed-value>B.A. (bachelor's)</displayed-value>
@@ -1199,7 +1105,7 @@
                 <displayed-value>Ph.D. (doctoral)</displayed-value>
                 <stored-value>Ph.D. (doctoral)</stored-value>
             </pair>
-        </value-pairs>      
+        </value-pairs>
 
     </form-value-pairs>
 
