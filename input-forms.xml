@@ -62,7 +62,7 @@
                     <repeatable>true</repeatable>
                     <label>Department</label>
                     <input-type value-pairs-name="departments">dropdown</input-type>
-                    <hint>Select the name of the department. If the department is not available,
+                    <hint>Select the name of your department, college, or organization. If it is not listed,
                         please select "Other."</hint>
                     <required/>
                 </field>
@@ -261,7 +261,7 @@
                     <repeatable>true</repeatable>
                     <label>Department</label>
                     <input-type value-pairs-name="departments">dropdown</input-type>
-                    <hint>Select the name of the department. If the department is not available,
+                    <hint>Select the name of your department, college, or organization. If it is not listed,
                         please select "Other."</hint>
                     <required/>
                 </field>
@@ -488,7 +488,7 @@
                     <repeatable>true</repeatable>
                     <label>Department</label>
                     <input-type value-pairs-name="departments">dropdown</input-type>
-                    <hint>Select the name of the department. If the department is not available,
+                    <hint>Select the name of your department, college, or organization. If it is not listed,
                         please select "Other."</hint>
                     <required/>
                 </field>
@@ -723,115 +723,63 @@
                 <displayed-value>Department of Accountancy</displayed-value>
                 <stored-value>Department of Accountancy</stored-value>
             </pair>
+
             <pair>
-                <displayed-value>Department of Finance</displayed-value>
-                <stored-value>Department of Finance</stored-value>
+                <displayed-value>Department of Anthropology</displayed-value>
+                <stored-value>Department of Anthropology</stored-value>
             </pair>
+
             <pair>
-                <displayed-value>Department of Management</displayed-value>
-                <stored-value>Department of Management</stored-value>
+                <displayed-value>Department of Biological Sciences</displayed-value>
+                <stored-value>Department of Biological Sciences</stored-value>
             </pair>
+
             <pair>
-                <displayed-value>Department of Marketing</displayed-value>
-                <stored-value>Department of Marketing</stored-value>
+                <displayed-value>Department of Chemistry and Biochemistry</displayed-value>
+                <stored-value>Department of Chemistry and Biochemistry</stored-value>
             </pair>
+
             <pair>
-                <displayed-value>Department of Operations and Information Management</displayed-value>
-                <stored-value>Department of Operations and Information Management</stored-value>
+                <displayed-value>Department of Communication</displayed-value>
+                <stored-value>Department of Communication</stored-value>
             </pair>
+
             <pair>
+                <displayed-value>Department of Computer Science</displayed-value>
+                <stored-value>Department of Computer Science</stored-value>
+            </pair>
+
+           <pair>
                 <displayed-value>Department of Counseling, Adult, and Higher Education (CAHE)</displayed-value>
                 <stored-value>Department of Counseling, Adult, and Higher Education (CAHE)</stored-value>
             </pair>
+
+            <pair>
+                <displayed-value>Department of Economics</displayed-value>
+                <stored-value>Department of Economics</stored-value>
+            </pair>
+
             <pair>
                 <displayed-value>Department of Educational Technology, Research, and Assessment</displayed-value>
                 <stored-value>Department of Educational Technology, Research, and
                     Assessment</stored-value>
             </pair>
-            <pair>
-                <displayed-value>Department of Kinesiology and Physical Education (KNPE)</displayed-value>
-                <stored-value>Department of Kinesiology and Physical Education (KNPE)</stored-value>
-            </pair>
-            <pair>
-                <displayed-value>Department of Leadership, Educational Psychology, and Foundations (LEPF)</displayed-value>
-                <stored-value>Department of Leadership, Educational Psychology, and Foundations (LEPF)</stored-value>
-            </pair>
-            <pair>
-                <displayed-value>Department of Literacy Education (LTCY)</displayed-value>
-                <stored-value>Department of Literacy Education (LTCY)</stored-value>
-            </pair>
-            <pair>
-                <displayed-value>Department of Special and Early Education</displayed-value>
-                <stored-value>Department of Special and Early Education</stored-value>
-            </pair>
+
             <pair>
                 <displayed-value>Department of Electrical Engineering</displayed-value>
                 <stored-value>Department of Electrical Engineering</stored-value>
             </pair>
-            <pair>
-                <displayed-value>Department of Industrial and Systems Engineering</displayed-value>
-                <stored-value>Department of Industrial and Systems Engineering</stored-value>
-            </pair>
-            <pair>
-                <displayed-value>Department of Mechanical Engineering</displayed-value>
-                <stored-value>Department of Mechanical Engineering</stored-value>
-            </pair>
-            <pair>
-                <displayed-value>Department of Technology</displayed-value>
-                <stored-value>Department of Technology</stored-value>
-            </pair>
-            <pair>
-                <displayed-value>Department of Military Science</displayed-value>
-                <stored-value>Department of Military Science</stored-value>
-            </pair>
-            <pair>
-                <displayed-value>School of Allied Health and Communicative Disorders</displayed-value>
-                <stored-value>School of Allied Health and Communicative Disorders</stored-value>
-            </pair>
-            <pair>
-                <displayed-value>School of Family, Consumer and Nutrition Sciences</displayed-value>
-                <stored-value>School of Family, Consumer and Nutrition Sciences</stored-value>
-            </pair>
-            <pair>
-                <displayed-value>School of Nursing and Health Studies</displayed-value>
-                <stored-value>School of Nursing and Health Studies</stored-value>
-            </pair>
-            <pair>
-                <displayed-value>College of Law</displayed-value>
-                <stored-value>College of Law</stored-value>
-            </pair>
-            <pair>
-                <displayed-value>Center for Latino and Latin American Studies</displayed-value>
-                <stored-value>Center for Latino and Latin American Studies</stored-value>
-            </pair>
-            <pair>
-                <displayed-value>Department of Anthropology</displayed-value>
-                <stored-value>Department of Anthropology</stored-value>
-            </pair>
-            <pair>
-                <displayed-value>Department of Biological Sciences</displayed-value>
-                <stored-value>Department of Biological Sciences</stored-value>
-            </pair>
-            <pair>
-                <displayed-value>Department of Chemistry and Biochemistry</displayed-value>
-                <stored-value>Department of Chemistry and Biochemistry</stored-value>
-            </pair>
-            <pair>
-                <displayed-value>Department of Communication</displayed-value>
-                <stored-value>Department of Communication</stored-value>
-            </pair>
-            <pair>
-                <displayed-value>Department of Computer Science</displayed-value>
-                <stored-value>Department of Computer Science</stored-value>
-            </pair>
-            <pair>
-                <displayed-value>Department of Economics</displayed-value>
-                <stored-value>Department of Economics</stored-value>
-            </pair>
+
             <pair>
                 <displayed-value>Department of English</displayed-value>
                 <stored-value>Department of English</stored-value>
             </pair>
+
+            <pair>
+                <displayed-value>Department of Finance</displayed-value>
+                <stored-value>Department of Finance</stored-value>
+            </pair>
+
             <pair>
                 <displayed-value>Department of Foreign Languages and Literatures</displayed-value>
                 <stored-value>Department of Foreign Languages and Literatures</stored-value>
@@ -848,54 +796,147 @@
                 <displayed-value>Department of History</displayed-value>
                 <stored-value>Department of History</stored-value>
             </pair>
+
+            <pair>
+                <displayed-value>Department of Industrial and Systems Engineering</displayed-value>
+                <stored-value>Department of Industrial and Systems Engineering</stored-value>
+            </pair>
+
+            <pair>
+                <displayed-value>Department of Kinesiology and Physical Education (KNPE)</displayed-value>
+                <stored-value>Department of Kinesiology and Physical Education (KNPE)</stored-value>
+            </pair>
+
+            <pair>
+                <displayed-value>Department of Leadership, Educational Psychology, and Foundations (LEPF)</displayed-value>
+                <stored-value>Department of Leadership, Educational Psychology, and Foundations (LEPF)</stored-value>
+            </pair>
+
+            <pair>
+                <displayed-value>Department of Literacy Education (LTCY)</displayed-value>
+                <stored-value>Department of Literacy Education (LTCY)</stored-value>
+            </pair>
+
+            <pair>
+                <displayed-value>Department of Management</displayed-value>
+                <stored-value>Department of Management</stored-value>
+            </pair>
+
+            <pair>
+                <displayed-value>Department of Marketing</displayed-value>
+                <stored-value>Department of Marketing</stored-value>
+            </pair>
+
             <pair>
                 <displayed-value>Department of Mathematical Sciences</displayed-value>
                 <stored-value>Department of Mathematical Sciences</stored-value>
             </pair>
+
             <pair>
-                <displayed-value>Division of Statistics</displayed-value>
-                <stored-value>Division of Statistics</stored-value>
+                <displayed-value>Department of Mechanical Engineering</displayed-value>
+                <stored-value>Department of Mechanical Engineering</stored-value>
             </pair>
+
+            <pair>
+                <displayed-value>Department of Military Science</displayed-value>
+                <stored-value>Department of Military Science</stored-value>
+            </pair>
+
+            <pair>
+                <displayed-value>Department of Operations and Information Management</displayed-value>
+                <stored-value>Department of Operations and Information Management</stored-value>
+            </pair>
+
             <pair>
                 <displayed-value>Department of Philosophy</displayed-value>
                 <stored-value>Department of Philosophy</stored-value>
             </pair>
+
             <pair>
                 <displayed-value>Department of Physics</displayed-value>
                 <stored-value>Department of Physics</stored-value>
             </pair>
+
             <pair>
                 <displayed-value>Department of Political Science</displayed-value>
                 <stored-value>Department of Political Science</stored-value>
             </pair>
+
             <pair>
                 <displayed-value>Department of Psychology</displayed-value>
                 <stored-value>Department of Psychology</stored-value>
             </pair>
+            
+            <pair>
+                <displayed-value>Department of Special and Early Education</displayed-value>
+                <stored-value>Department of Special and Early Education</stored-value>
+            </pair>
+
+            <pair>
+                <displayed-value>Division of Statistics</displayed-value>
+                <stored-value>Division of Statistics</stored-value>
+            </pair>
+
             <pair>
                 <displayed-value>Department of Sociology</displayed-value>
                 <stored-value>Department of Sociology</stored-value>
             </pair>
+
+            <pair>
+                <displayed-value>Department of Technology</displayed-value>
+                <stored-value>Department of Technology</stored-value>
+            </pair>
+
+           <pair>
+                <displayed-value>College of Law</displayed-value>
+                <stored-value>College of Law</stored-value>
+            </pair>
+
+            <pair>
+                <displayed-value>Center for Latino and Latin American Studies</displayed-value>
+                <stored-value>Center for Latino and Latin American Studies</stored-value>
+            </pair>
+
             <pair>
                 <displayed-value>Division of Public Administration</displayed-value>
                 <stored-value>Division of Public Administration</stored-value>
             </pair>
+
             <pair>
-                <displayed-value>Women Studies Program</displayed-value>
-                <stored-value>Women Studies Program</stored-value>
+                <displayed-value>School of Allied Health and Communicative Disorders</displayed-value>
+                <stored-value>School of Allied Health and Communicative Disorders</stored-value>
             </pair>
+
             <pair>
                 <displayed-value>School of Art</displayed-value>
                 <stored-value>School of Art</stored-value>
             </pair>
+
+            <pair>
+                <displayed-value>School of Family, Consumer and Nutrition Sciences</displayed-value>
+                <stored-value>School of Family, Consumer and Nutrition Sciences</stored-value>
+            </pair>
+
             <pair>
                 <displayed-value>School of Music</displayed-value>
                 <stored-value>School of Music</stored-value>
             </pair>
+
             <pair>
+                <displayed-value>School of Nursing and Health Studies</displayed-value>
+                <stored-value>School of Nursing and Health Studies</stored-value>
+            </pair>
+
+             <pair>
                 <displayed-value>School of Theatre and Dance</displayed-value>
                 <stored-value>School of Theatre and Dance</stored-value>
             </pair>
+
+            <pair>
+                <displayed-value>Women Studies Program</displayed-value>
+                <stored-value>Women Studies Program</stored-value>
+            </pair>
+
             <pair>
                 <displayed-value>Other</displayed-value>
                 <stored-value>Other</stored-value>
@@ -1089,22 +1130,30 @@
                 <displayed-value>Article</displayed-value>
                 <stored-value>Article</stored-value>
             </pair>
+
+            <pair>
+                <displayed-value>Conference Poster</displayed-value>
+                <stored-value>Conference Poster</stored-value>
+            </pair>
+
+            <pair>
+                <displayed-value>Drawing</displayed-value>
+                <stored-value>Drawing</stored-value>
+            </pair>
+
             <pair>
                 <displayed-value>Essay</displayed-value>
                 <stored-value>Essay</stored-value>
             </pair>
             <pair>
-                <displayed-value>Conference Poster</displayed-value>
-                <stored-value>Conference Poster</stored-value>
-            </pair>
-            <pair>
-                <displayed-value>Drawing</displayed-value>
-                <stored-value>Drawing</stored-value>
+                <displayed-value>Oral history</displayed-value>
+                <stored-value>Oral history</stored-value>
             </pair>
             <pair>
                 <displayed-value>Performance</displayed-value>
                 <stored-value>Performance</stored-value>
             </pair>
+
             <pair>
                 <displayed-value>Photograph</displayed-value>
                 <stored-value>Photograph</stored-value>
@@ -1117,10 +1166,7 @@
                 <displayed-value>Presentation/Lecture/Speech</displayed-value>
                 <stored-value>Presentation/Lecture/Speech</stored-value>
             </pair>
-            <pair>
-                <displayed-value>Oral history</displayed-value>
-                <stored-value>Oral history</stored-value>
-            </pair>
+
             <pair>
                 <displayed-value>Score</displayed-value>
                 <stored-value>Score</stored-value>
@@ -1137,32 +1183,32 @@
 
         <value-pairs value-pairs-name="degree_types" dc-term="description_degree">
             <pair>
-                <displayed-value>B.A. (bachelor's)</displayed-value>
-                <stored-value>B.A. (bachelor's)</stored-value>
+                <displayed-value>BA (Bachelor of Arts)</displayed-value>
+                <stored-value>B.A. (Bachelor of Arts)</stored-value>
             </pair>
             <pair>
-                <displayed-value>B.S. (bachelor's)</displayed-value>
-                <stored-value>B.S. (bachelor's)</stored-value>
+                <displayed-value>BS (Bachelor of Science)</displayed-value>
+                <stored-value>B.S. (Bachelor of Science)</stored-value>
             </pair>
             <pair>
-                <displayed-value>M.A. (master's)</displayed-value>
-                <stored-value>M.A. (master's)</stored-value>
+                <displayed-value>MA (Master of Arts)</displayed-value>
+                <stored-value>M.A. (Master of Arts)</stored-value>
             </pair>
             <pair>
-                <displayed-value>M.F.A. (master's)</displayed-value>
-                <stored-value>M.F.A. (master's)</stored-value>
+                <displayed-value>MFA (Master of Fine Arts)</displayed-value>
+                <stored-value>M.F.A. (Master of Fine Arts)</stored-value>
             </pair>
             <pair>
-                <displayed-value>M.S. (master's)</displayed-value>
-                <stored-value>M.S. (master's)</stored-value>
+                <displayed-value>MS (Master of Science)</displayed-value>
+                <stored-value>M.S. (Master of Science)</stored-value>
             </pair>
             <pair>
-                <displayed-value>Ed.D. (doctoral)</displayed-value>
-                <stored-value>Ed.D. (doctoral)</stored-value>
+                <displayed-value>Ed.D. (Doctor of Education)</displayed-value>
+                <stored-value>Ed.D. (Doctor of Education)</stored-value>
             </pair>
             <pair>
-                <displayed-value>Ph.D. (doctoral)</displayed-value>
-                <stored-value>Ph.D. (doctoral)</stored-value>
+                <displayed-value>Ph.D. (Doctor of Philosophy)</displayed-value>
+                <stored-value>Ph.D. (Doctor of Philosophy)</stored-value>
             </pair>
         </value-pairs>
 
