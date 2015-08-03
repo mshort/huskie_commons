@@ -22,6 +22,12 @@
                     <xsl:value-of select="."/>
                 </dc:title>
             </xsl:for-each>
+            <!-- Match author as dc:creator -->
+            <xsl:for-each select="doc:metadata/doc:element[@name='dc']/doc:element[@name='contributor']/doc:element[@name='author']/doc:element/doc:field[@name='value']">
+                <dc:creator>
+                    <xsl:value-of select="."/>
+                </dc:creator>
+            </xsl:for-each>
             <xsl:for-each select="doc:metadata/doc:element[@name='dc']/doc:element[@name='contributor']/doc:element[@name!='author']/doc:element/doc:field[@name='value']">
                 <dc:contributor>
                     <xsl:value-of select="."/>
@@ -36,6 +42,18 @@
                 <dcterms:abstract>
                     <xsl:value-of select="."/>
                 </dcterms:abstract>
+            </xsl:for-each>
+            <!-- Match dc.description.degree -->
+            <xsl:for-each select="doc:metadata/doc:element[@name='dc']/doc:element[@name='description']/doc:element[@name='degree']/doc:element/doc:field[@name='value']">
+                <dc:description>
+                    <xsl:value-of select="."/>
+                </dc:description>
+            </xsl:for-each>
+            <!-- Match dc:description with no qualifiers, i.e. generic notes -->
+            <xsl:for-each select="doc:metadata/doc:element[@name='dc']/doc:element[@name='description']/doc:element/doc:field[@name='value']">
+                <dc:description>
+                    <xsl:value-of select="."/>
+                </dc:description>
             </xsl:for-each>
             <xsl:for-each select="doc:metadata/doc:element[@name='dc']/doc:element[@name='date']/doc:element[@name='available']/doc:element/doc:field[@name='value']">
                 <dcterms:dateAccepted>
@@ -58,6 +76,12 @@
                 </dcterms:issued>
             </xsl:for-each>
             <xsl:for-each select="doc:metadata/doc:element[@name='dc']/doc:element[@name='type']/doc:element/doc:field[@name='value']">
+                <dc:type>
+                    <xsl:value-of select="."/>
+                </dc:type>
+            </xsl:for-each>
+            <!-- Match dc.type.genre -->
+            <xsl:for-each select="doc:metadata/doc:element[@name='dc']/doc:element[@name='type']/doc:element[@name='genre']/doc:element/doc:field[@name='value']">
                 <dc:type>
                     <xsl:value-of select="."/>
                 </dc:type>
@@ -96,6 +120,12 @@
                 <dc:format>
                     <xsl:value-of select="."/>
                 </dc:format>
+            </xsl:for-each>
+            <!-- Match dc.format.extent with dcterms:extent -->
+            <xsl:for-each select="doc:metadata/doc:element[@name='dc']/doc:element[@name='format']/doc:element[@name='extent']/doc:field[@name='value']">
+                <dcterms:extent>
+                    <xsl:value-of select="."/>
+                </dcterms:extent>
             </xsl:for-each>
             <xsl:for-each select="doc:metadata/doc:element[@name='dc']/doc:element[@name='coverage']/doc:element/doc:field[@name='value']">
                 <dc:coverage>
