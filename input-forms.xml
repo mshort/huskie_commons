@@ -1087,10 +1087,6 @@
         
         <value-pairs value-pairs-name="scholar_genres" dc-term="type_genre">
             <pair>
-                <displayed-value>Dissertation/Thesis</displayed-value>
-                <stored-value>Dissertation/Thesis</stored-value>
-            </pair>
-            <pair>
                 <displayed-value>Article</displayed-value>
                 <stored-value>Article</stored-value>
             </pair>
@@ -1130,6 +1126,10 @@
         
 
         <value-pairs value-pairs-name="honor_genres" dc-term="type_genre">
+            <pair>
+                <displayed-value>Dissertation/Thesis</displayed-value>
+                <stored-value>Dissertation/Thesis</stored-value>
+            </pair>
             <pair>
                 <displayed-value>Article</displayed-value>
                 <stored-value>Article</stored-value>
