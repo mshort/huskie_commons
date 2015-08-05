@@ -122,7 +122,7 @@
                 </dc:format>
             </xsl:for-each>
             <!-- Match dc.format.extent with dcterms:extent -->
-            <xsl:for-each select="doc:metadata/doc:element[@name='dc']/doc:element[@name='format']/doc:element[@name='extent']/doc:field[@name='value']">
+            <xsl:for-each select="doc:metadata/doc:element[@name='dc']/doc:element[@name='format']/doc:element[@name='extent']/doc:element/doc:field[@name='value']">
                 <dcterms:extent>
                     <xsl:value-of select="."/>
                 </dcterms:extent>
