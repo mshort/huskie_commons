@@ -1199,6 +1199,10 @@
                 <stored-value>M.A. (Master of Arts)</stored-value>
             </pair>
             <pair>
+                <displayed-value>M.S. Ed. (Master of Education)</displayed-value>
+                <stored-value>M.S. Ed. (Master of Education)</stored-value>
+            </pair>
+            <pair>
                 <displayed-value>MFA (Master of Fine Arts)</displayed-value>
                 <stored-value>M.F.A. (Master of Fine Arts)</stored-value>
             </pair>
