@@ -384,6 +384,15 @@
                         select 'N/A'.</hint>
                     <required/>
                 </field>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>rights</dc-element>
+                    <dc-qualifier/>
+                    <repeatable>false</repeatable>
+                    <label>Rights</label>
+                    <input-type>textarea</input-type>
+                    <required>Please enter a rights statement.</required>
+                </field>
             </page>
 
             <page number="2">
