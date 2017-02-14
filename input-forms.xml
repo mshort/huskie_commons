@@ -1433,20 +1433,20 @@
 		
         <value-pairs value-pairs-name="program_names" dc-term="contributor_program">
             <pair>
-                <displayed-value>McKearn Fellowship</displayed-value>
-                <stored-value>McKearn Fellowship</stored-value>
-            </pair>
-            <pair>
-                <displayed-value>Research Rookie</displayed-value>
-                <stored-value>Research Rookie</stored-value>
+                <displayed-value>Research Rookies</displayed-value>
+                <stored-value>Research Rookies</stored-value>
             </pair>
             <pair>
                 <displayed-value>Student Engagement Fund</displayed-value>
                 <stored-value>Student Engagement Fund</stored-value>
             </pair>
+	    <pair>
+                <displayed-value>Undergraduate Special Opportunities in Artistry &amp; Research Program (USOAR)</displayed-value>
+                <stored-value>Undergraduate Special Opportunities in Artistry &amp; Research Program (USOAR)</stored-value>
+            </pair>
             <pair>
-                <displayed-value>Summer Research</displayed-value>
-                <stored-value>Summer Research</stored-value>
+                <displayed-value>Summer Research Opportunities Program</displayed-value>
+                <stored-value>Summer Research Opportunities Program</stored-value>
             </pair>
         </value-pairs>
 
