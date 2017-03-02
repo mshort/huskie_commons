@@ -389,9 +389,18 @@
                     <dc-element>rights</dc-element>
                     <dc-qualifier/>
                     <repeatable>false</repeatable>
-                    <label>Rights</label>
+                    <label>Rights Statement</label>
+                    <input-type value-pairs-name="rights_statements">dropdown</input-type>
+                    <required>Please select the most appropriate statement that best indicates your submission's copyright and reuse status. N.B.: This is not a license. If you have a more specific rights statement, please also enter it below. For guidance, see: http://rightsstatements.org</required>
+                </field>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>rights</dc-element>
+                    <dc-qualifier/>
+                    <repeatable>false</repeatable>
+                    <label>Copyright Status</label>
                     <input-type>textarea</input-type>
-                    <required>Please enter a rights statement.</required>
+                    <hint>Use this area to enter a specific copyright statement. Always spell out ‘Copyright’ and include the year. Example: Copyright 2016 Jane Doe</hint>
                 </field>
             </page>
 
@@ -1449,7 +1458,40 @@
                 <stored-value>Summer Research Opportunities Program</stored-value>
             </pair>
         </value-pairs>
-
+        <value-pairs value-pairs-name="rights_statements" dc-term="rights">
+            <pair>
+                <displayed-value>In Copyright</displayed-value>
+                <stored-value>In Copyright</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>In Copyright - Educational Use Permitted</displayed-value>
+                <stored-value>In Copyright - Educational Use Permitted</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>In Copyright - Non-Commercial Use Permitted</displayed-value>
+                <stored-value>In Copyright - Non-Commercial Use Permitted</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>No Copyright</displayed-value>
+                <stored-value>No Copyright</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>No Copyright - Contractual Restrictions</displayed-value>
+                <stored-value>No Copyright - Contractual Restrictions</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>No Copyright - Non-Commercial Use Only</displayed-value>
+                <stored-value>No Copyright - Non-Commercial Use Only</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Copyright Undetermined</displayed-value>
+                <stored-value>Copyright Undetermined</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>No Known Copyright</displayed-value>
+                <stored-value>No Known Copyright</stored-value>
+            </pair>
+        </value-pairs>
     </form-value-pairs>
 
 </input-forms>
