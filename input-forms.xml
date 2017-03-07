@@ -387,7 +387,7 @@
                 <field>
                     <dc-schema>dc</dc-schema>
                     <dc-element>rights</dc-element>
-                    <dc-qualifier/>
+                    <dc-qualifier>statement</dc-qualifier>
                     <repeatable>false</repeatable>
                     <label>Rights Statement</label>
                     <input-type value-pairs-name="rights_statements">dropdown</input-type>
