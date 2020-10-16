@@ -17,8 +17,7 @@
         <name-map collection-handle="default" form-name="traditional"/>
         <name-map collection-handle="10843/8" form-name="scholar_collection"/>
         <name-map collection-handle="10843/13631" form-name="honors_capstones"/>
-	<name-map collection-handle="10843/17367" form-name="honors_capstones"/>
-        <name-map collection-handle="10843/13613" form-name="artistry_day"/>        
+        <name-map collection-handle="10843/13613" form-name="artistry_day"/>
     </form-map>
 
 
@@ -55,7 +54,7 @@
                         preferred.</hint>
                     <required>You must enter at least one author for this item.</required>
                 </field>
-                
+
                 <field>
                     <dc-schema>dc</dc-schema>
                     <dc-element>contributor</dc-element>
@@ -162,7 +161,7 @@
                         in the list, you may have to hold down the "CTRL" or "Shift" key.</hint>
                     <required/>
                 </field>
-                
+
                 <field>
                     <dc-schema>dc</dc-schema>
                     <dc-element>type</dc-element>
@@ -254,7 +253,7 @@
                         preferred.</hint>
                     <required>You must enter at least one author for this item.</required>
                 </field>
-                
+
                 <field>
                     <dc-schema>dc</dc-schema>
                     <dc-element>contributor</dc-element>
@@ -646,7 +645,7 @@
                 </field>
             </page>
         </form>
-		
+
         <form name="artistry_day">
             <page number="1">
                 <field>
@@ -702,7 +701,7 @@
                     <input-type value-pairs-name="program_names">dropdown</input-type>
                     <hint>With which OSEEL Research program is your project associated?</hint>
                     <required/>
-                </field>				
+                </field>
                 <field>
                     <dc-schema>dc</dc-schema>
                     <dc-element>contributor</dc-element>
@@ -890,6 +889,10 @@
             <pair>
                 <displayed-value>ISBN</displayed-value>
                 <stored-value>isbn</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>SSRN</displayed-value>
+                <stored-value>ssrn</stored-value>
             </pair>
         </value-pairs>
 
@@ -1087,7 +1090,7 @@
                 <displayed-value>Department of Psychology</displayed-value>
                 <stored-value>Department of Psychology</stored-value>
             </pair>
-            
+
             <pair>
                 <displayed-value>Department of Special and Early Education</displayed-value>
                 <stored-value>Department of Special and Early Education</stored-value>
@@ -1190,7 +1193,7 @@
                 <stored-value>Other</stored-value>
             </pair>
         </value-pairs>
-        
+
         <value-pairs value-pairs-name="common_genres" dc-term="type_genre">
             <pair>
                 <displayed-value>Article</displayed-value>
@@ -1305,7 +1308,7 @@
                 <stored-value>Other</stored-value>
             </pair>
         </value-pairs>
-        
+
         <value-pairs value-pairs-name="scholar_genres" dc-term="type_genre">
             <pair>
                 <displayed-value>Article</displayed-value>
@@ -1344,7 +1347,7 @@
                 <stored-value>Other</stored-value>
             </pair>
         </value-pairs>
-        
+
 
         <value-pairs value-pairs-name="honor_genres" dc-term="type_genre">
             <pair>
@@ -1419,10 +1422,10 @@
                 <displayed-value>MA (Master of Arts)</displayed-value>
                 <stored-value>M.A. (Master of Arts)</stored-value>
             </pair>
-	    <pair>
+            <pair>
                 <displayed-value>M.S. Ed. (Master of Education)</displayed-value>
                 <stored-value>M.S. Ed. (Master of Education)</stored-value>
-	    </pair>
+            </pair>
             <pair>
                 <displayed-value>MFA (Master of Fine Arts)</displayed-value>
                 <stored-value>M.F.A. (Master of Fine Arts)</stored-value>
@@ -1440,7 +1443,7 @@
                 <stored-value>Ph.D. (Doctor of Philosophy)</stored-value>
             </pair>
         </value-pairs>
-		
+
         <value-pairs value-pairs-name="program_names" dc-term="contributor_program">
             <pair>
                 <displayed-value>Research Rookies</displayed-value>
@@ -1450,7 +1453,7 @@
                 <displayed-value>Student Engagement Fund</displayed-value>
                 <stored-value>Student Engagement Fund</stored-value>
             </pair>
-	    <pair>
+            <pair>
                 <displayed-value>Undergraduate Special Opportunities in Artistry &amp; Research Program (USOAR)</displayed-value>
                 <stored-value>Undergraduate Special Opportunities in Artistry &amp; Research Program (USOAR)</stored-value>
             </pair>
